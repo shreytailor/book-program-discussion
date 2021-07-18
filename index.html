@@ -1,0 +1,286 @@
+<!--
+    Book Program Discussion.
+    Developed by Shrey Tailor.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage | BDP</title>
+
+    <!-- Importing the JavaScript file and stylesheet. -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <!-- This is the container for Header. -->
+    <header class="header custom-background-color">
+
+        <!-- This is the logo (aligned to the left). -->
+        <svg class="logo" aria-label="Book Program Discussion Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.05 21.34">
+            <title>Book Program Discussion Logo</title>
+            <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#5b3a2a;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M.81,3.25C3.65,2.42,5.74,1.94,7,1.64,8.43,1.3,10.52.77,13.15,0a1,1,0,0,1,1.28,1v.85a.73.73,0,0,0,.92.71h0a1.61,1.61,0,0,1,2,1.57V16.42A1.62,1.62,0,0,1,16.15,18L4,21.28a1.52,1.52,0,0,1-.42.06H3a2.65,2.65,0,0,1-1.58-.52l-.35-.25A2.65,2.65,0,0,1,0,18.42C0,14.13.27,11.34,0,4.3c0-.17,0-.36,0-.49a.51.51,0,0,1,.37-.43Z"/><polygon class="cls-2" points="3.78 7.15 15.66 4.14 15.66 16.53 3.78 19.49 3.78 7.15"/><path class="cls-2" d="M1.9,4.72,11,2.17a.45.45,0,0,1,.42.1l.92.83a.21.21,0,0,1-.08.35l-9,2.39a.67.67,0,0,1-.58-.11l-.84-.65A.21.21,0,0,1,1.9,4.72Z"/><path class="cls-1" d="M21.3,8.11a16.46,16.46,0,0,1,2.36-.17,4.51,4.51,0,0,1,2.4.46A1.74,1.74,0,0,1,27,10a1.84,1.84,0,0,1-1.33,1.72v0a2,2,0,0,1,1.61,2,2.17,2.17,0,0,1-.84,1.73,5.09,5.09,0,0,1-3.18.73,14.17,14.17,0,0,1-2-.12Zm1.81,3.1h.6c1,0,1.48-.4,1.48-1s-.47-.93-1.3-.93a5.74,5.74,0,0,0-.78,0Zm0,3.58a4.67,4.67,0,0,0,.71,0c.83,0,1.56-.33,1.56-1.18s-.73-1.13-1.64-1.13h-.63Z"/><path class="cls-1" d="M34.91,8.12a17.08,17.08,0,0,1,2.45-.18,5.26,5.26,0,0,1,3.33.87,3.56,3.56,0,0,1,1.36,3,4.13,4.13,0,0,1-1.33,3.28,5.82,5.82,0,0,1-3.74,1,15.51,15.51,0,0,1-2.07-.12Zm1.82,6.59a4,4,0,0,0,.63,0,2.51,2.51,0,0,0,2.76-2.83,2.33,2.33,0,0,0-2.56-2.56,3.63,3.63,0,0,0-.83.07Z"/><path class="cls-1" d="M28.29,8.14A15.51,15.51,0,0,1,30.76,8a3.9,3.9,0,0,1,2.47.65,2.32,2.32,0,0,1,.86,1.87,2.52,2.52,0,0,1-.74,1.92,3.8,3.8,0,0,1-2.63.85,3.72,3.72,0,0,1-.62,0v2.9H28.29Zm1.81,3.67a2.42,2.42,0,0,0,.61,0c1,0,1.57-.49,1.57-1.31s-.52-1.18-1.44-1.18a3,3,0,0,0-.74.06Z"/></g></g>
+        </svg>
+
+        <!-- This is the navigation menu inside the header (center aligned). -->
+        <nav class="h-menu-items">
+            <div class="h-menu-item">
+                <a class="clickable" href="#">Home</a>
+                <div class="h-selected-item-rectangle"></div>
+            </div>
+            <a class="clickable" href="#">About Us</a>
+            <a class="clickable" href="#">Books</a>
+            <a class="clickable" href="#">News</a>
+            <a class="clickable" href="#">Members</a>
+        </nav>
+
+        <!-- This section contains search, as well as the social icons (aligned to the right). -->
+        <section class="h-social-items">
+
+            <!-- Each div entry within this section is for a single SVG icon. -->
+            <button class="h-social-icon clickable" aria-label="Search Website">
+                <svg aria-label="Search Website" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <title>Search Website</title>
+                    <desc>Use this button to search the other parts of the website.s</desc>
+                    <path d="M22.75 22.75L16.25 16.25L22.75 22.75ZM18.4167 10.8333C18.4167 11.8292 18.2205 12.8153 17.8394 13.7354C17.4583 14.6554 16.8997 15.4914 16.1956 16.1956C15.4914 16.8997 14.6554 17.4583 13.7354 17.8394C12.8153 18.2205 11.8292 18.4167 10.8333 18.4167C9.83748 18.4167 8.85137 18.2205 7.93132 17.8394C7.01127 17.4583 6.17528 16.8997 5.47111 16.1956C4.76693 15.4914 4.20835 14.6554 3.82725 13.7354C3.44615 12.8153 3.25 11.8292 3.25 10.8333C3.25 8.82211 4.04896 6.89326 5.47111 5.47111C6.89326 4.04896 8.82211 3.25 10.8333 3.25C12.8446 3.25 14.7734 4.04896 16.1956 5.47111C17.6177 6.89326 18.4167 8.82211 18.4167 10.8333Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+
+            <button class="h-social-icon clickable" aria-label="View Our Facebook Page">
+                <svg aria-label="View Our Facebook Page" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <title>Facebook Button</title>
+                    <desc>Use this button to view our social account on Facebook.</desc>
+                    <path d="M21.375 0H5.625C2.51888 0 0 2.51888 0 5.625V21.375C0 24.4811 2.51888 27 5.625 27H21.375C24.4823 27 27 24.4811 27 21.375V5.625C27 2.51888 24.4823 0 21.375 0ZM18 7.875H15.8355C15.1436 7.875 14.625 8.1585 14.625 8.87512V10.125H18L17.7323 13.5H14.625V22.5H11.25V13.5H9V10.125H11.25V7.96163C11.25 5.68687 12.447 4.5 15.1436 4.5H18V7.875Z" fill="white"/>
+                </svg>
+            </button>
+
+            <button class="h-social-icon clickable" aria-label="View Our Instagram Page">
+                <svg aria-label="View Our Instagram Page" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <title>View Instagram</title>
+                    <desc>Use this button to view our social account on Instagram.</desc>
+                    <path d="M17.1371 6.174C16.1887 6.13125 15.903 6.12225 13.5 6.12225C11.097 6.12225 10.8124 6.13125 9.864 6.174C7.42275 6.28538 6.28537 7.44188 6.17512 9.86287C6.13125 10.8124 6.12113 11.097 6.12113 13.5C6.12113 15.903 6.13125 16.1876 6.174 17.1371C6.28538 19.5536 7.41825 20.7146 9.86287 20.826C10.8113 20.8687 11.097 20.8789 13.5 20.8789C15.9041 20.8789 16.1887 20.8699 17.1371 20.8271C19.5784 20.7157 20.7146 19.557 20.826 17.1383C20.8687 16.1887 20.8778 15.9041 20.8778 13.5011C20.8778 11.0981 20.8687 10.8135 20.826 9.86512C20.7146 7.443 19.5761 6.28538 17.1371 6.174ZM13.5 18.1215C10.9474 18.1215 8.8785 16.0526 8.8785 13.5C8.8785 10.9474 10.9485 8.8785 13.5 8.8785C16.0515 8.8785 18.1215 10.9474 18.1215 13.5C18.1215 16.0526 16.0526 18.1215 13.5 18.1215ZM18.3049 9.77625C17.7086 9.77625 17.2249 9.2925 17.2249 8.69625C17.2249 8.1 17.7086 7.61625 18.3049 7.61625C18.9011 7.61625 19.3849 8.1 19.3849 8.69625C19.3849 9.2925 18.9011 9.77625 18.3049 9.77625ZM16.5004 13.5C16.5004 15.1571 15.1571 16.5004 13.5 16.5004C11.8429 16.5004 10.4996 15.1571 10.4996 13.5C10.4996 11.8429 11.8429 10.4996 13.5 10.4996C15.1571 10.4996 16.5004 11.8429 16.5004 13.5ZM21.375 0H5.625C2.51888 0 0 2.51888 0 5.625V21.375C0 24.4811 2.51888 27 5.625 27H21.375C24.4823 27 27 24.4811 27 21.375V5.625C27 2.51888 24.4823 0 21.375 0V0ZM22.446 17.2103C22.2975 20.4829 20.4761 22.2964 17.2114 22.446C16.2506 22.4899 15.9446 22.5 13.5 22.5C11.0554 22.5 10.7505 22.4899 9.78975 22.446C6.51825 22.2964 4.70475 20.4795 4.554 17.2103C4.51012 16.2506 4.5 15.9446 4.5 13.5C4.5 11.0565 4.51012 10.7494 4.554 9.78975C4.70475 6.51825 6.5205 4.70362 9.78975 4.55512C10.7505 4.51012 11.0554 4.5 13.5 4.5C15.9446 4.5 16.2506 4.51012 17.2114 4.554C20.4829 4.70362 22.2997 6.52388 22.446 9.78863C22.4899 10.7494 22.5 11.0565 22.5 13.5C22.5 15.9446 22.4899 16.2506 22.446 17.2103Z" fill="white"/>
+                </svg>
+            </button>
+        </section>
+    </header>
+
+    <!-- This section contains the Hero content. -->
+    <section class="hero custom-background-color">
+
+        <!-- This is the button for the left arrow (aligned to the left). -->
+        <button class="left-arrow clickable" aria-label="View Previous Hero Image">
+            <svg aria-label="View Previous Hero Image" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <title>View Previous Hero Image</title>
+                <desc>View the previous image on the Hero section.</desc>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C25.3043 40 30.3914 37.8929 34.1421 34.1421C37.8929 30.3914 40 25.3043 40 20C40 14.6957 37.8929 9.60859 34.1421 5.85786C30.3914 2.10714 25.3043 0 20 0C14.6957 0 9.60859 2.10714 5.85786 5.85786C2.10714 9.60859 0 14.6957 0 20C0 25.3043 2.10714 30.3914 5.85786 34.1421C9.60859 37.8929 14.6957 40 20 40ZM21.7675 14.2675C22.2229 13.796 22.4749 13.1645 22.4692 12.509C22.4635 11.8535 22.2006 11.2265 21.737 10.763C21.2735 10.2994 20.6465 10.0365 19.991 10.0308C19.3355 10.0251 18.704 10.2771 18.2325 10.7325L10.7325 18.2325C10.2638 18.7013 10.0005 19.3371 10.0005 20C10.0005 20.6629 10.2638 21.2987 10.7325 21.7675L18.2325 29.2675C18.704 29.7229 19.3355 29.9749 19.991 29.9692C20.6465 29.9635 21.2735 29.7006 21.737 29.237C22.2006 28.7735 22.4635 28.1465 22.4692 27.491C22.4749 26.8355 22.2229 26.204 21.7675 25.7325L18.535 22.5H27.5C28.163 22.5 28.7989 22.2366 29.2678 21.7678C29.7366 21.2989 30 20.663 30 20C30 19.337 29.7366 18.7011 29.2678 18.2322C28.7989 17.7634 28.163 17.5 27.5 17.5H18.535L21.7675 14.2675Z" fill="white"/>
+            </svg>
+        </button>
+
+        <!-- This div contains the content for center. -->
+        <section class="primary-content">
+            <h1 class="title">Book Program Discussion</h1>
+            <p class="description">
+                Book Program Discussion lends books & professionally prepared discussion notes to book groups. Groups receive enough copies of their selected title to allow everyone in the group to read the same book at the same time. 
+            </p>
+            <button aria-label="Open Registration Form" id="trigger-modal" class="clickable register-now">Register Now</button>
+        </section>
+
+        <!-- This is the button for the right arrow (aligned to the right). -->
+        <button class="right-arrow clickable" aria-label="View Next Hero Image">
+            <svg aria-label="View Next Hero Image" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <title>View Next Hero Image</title>
+                <desc>View the next image on the Hero section.</desc>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C14.6957 40 9.60859 37.8929 5.85786 34.1421C2.10714 30.3914 0 25.3043 0 20C0 14.6957 2.10714 9.60859 5.85786 5.85786C9.60859 2.10714 14.6957 0 20 0C25.3043 0 30.3914 2.10714 34.1421 5.85786C37.8929 9.60859 40 14.6957 40 20C40 25.3043 37.8929 30.3914 34.1421 34.1421C30.3914 37.8929 25.3043 40 20 40ZM18.2325 14.2675C17.7771 13.796 17.5251 13.1645 17.5308 12.509C17.5365 11.8535 17.7994 11.2265 18.263 10.763C18.7265 10.2994 19.3535 10.0365 20.009 10.0308C20.6645 10.0251 21.296 10.2771 21.7675 10.7325L29.2675 18.2325C29.7362 18.7013 29.9995 19.3371 29.9995 20C29.9995 20.6629 29.7362 21.2987 29.2675 21.7675L21.7675 29.2675C21.296 29.7229 20.6645 29.9749 20.009 29.9692C19.3535 29.9635 18.7265 29.7006 18.263 29.237C17.7994 28.7735 17.5365 28.1465 17.5308 27.491C17.5251 26.8355 17.7771 26.204 18.2325 25.7325L21.465 22.5H12.5C11.837 22.5 11.2011 22.2366 10.7322 21.7678C10.2634 21.2989 10 20.663 10 20C10 19.337 10.2634 18.7011 10.7322 18.2322C11.2011 17.7634 11.837 17.5 12.5 17.5H21.465L18.2325 14.2675Z" fill="white"/>
+            </svg>                    
+        </button>
+    </section>
+
+    <!-- This is the container for Newest Arrivals books. -->
+    <main class="newest-arrivals">
+
+        <!-- This is the top part which contains title and arrows. -->
+        <section class="na-top">
+            <h2 class="na-title custom-color">Newest Arrivals</h2>
+            <section class="na-arrows">
+                <button class="na-arrow clickable" aria-label="Scroll Books Left">
+                    <svg aria-label="sScroll Books Left" width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <title>Scroll Books Left</title>
+                        <desc>Scroll to view the books to the left of the current view.</desc>
+                        <path d="M12 2L2 12.4072L12 22.8145" stroke="#757575" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+                </button>
+                <button class="na-arrow clickable" aria-label="Scroll Books Right">
+                    <svg aria-label="Scroll Books Right" width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <title>Scroll Books Right</title>
+                        <desc>Scroll to view the books to the right of the current view.</desc>
+                        <path d="M2 2L12 12.4072L2 22.8145" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+                </button>
+            </section>
+        </section>
+
+        <!-- This is the bottom part which contains the individual book entries. -->
+        <section class="na-bottom na-cards">
+
+            <!-- These are individual entries for each book. -->
+            <article class="na-card">
+                <img alt="Sorcerer's Stone Book Cover" class="na-card-image" src="./images/sorcerers-stone.jpeg"/>
+                <p class="na-card-author">Published by J.K. Rowling (1997)</p>
+                <p class="na-card-title">Sorcerer’s Stone</p>
+                <p class="na-card-description">
+                    Harry Potter, an eleven-year-old boy, discovers that he is a wizard and is invited to study at Hogwarts. Even as he escapes a dreary life and enters a world of magic, he finds trouble awaiting him.
+                </p>
+            </article>
+
+            <article class="na-card">
+                <img alt="Chamber Of Secrets Book Cover" class="na-card-image" src="./images/chamber-of-secrets.jpeg"/>
+                <p class="na-card-author">Published by J.K. Rowling (1998)</p>
+                <p class="na-card-title">Chamber Of Secrets</p>
+                <p class="na-card-description">
+                    A house-elf warns Harry against returning to Hogwarts, but he decides to ignore it. When students and creatures at the school begin to get petrified, Harry finds himself surrounded in mystery.
+                </p>
+            </article>
+
+            <article class="na-card">
+                <img alt="Prisoner Of Azkaban Book Cover" class="na-card-image" src="./images/prisoner-of-azkaban.jpeg"/>
+                <p class="na-card-author">Published by J.K. Rowling (1999)</p>
+                <p class="na-card-title">Prisoner Of Azkaban</p>
+                <p class="na-card-description">
+                    Harry, Ron and Hermoine return to Hogwarts just as they learn about Sirius Black and his plans to kill Harry. However, when Harry runs into him, he learns that the truth is far from reality.
+                </p>
+            </article>
+
+            <article class="na-card">
+                <img alt="Goblet Of Fire Book Cover" class="na-card-image" src="./images/goblet-of-fire.jpeg"/>
+                <p class="na-card-author">Published by J.K. Rowling (2000)</p>
+                <p class="na-card-title">Goblet Of Fire</p>
+                <p class="na-card-description">
+                    When Harry is chosen as a fourth participant of the inter-school Triwizard Tournament, he is unwittingly pulled into a dark conspiracy that endangers his life.
+                </p>
+            </article>
+
+            <article class="na-card">
+                <img alt="Order Of Phoenix Book Cover" class="na-card-image" src="./images/order-of-phoenix.jpeg"/>
+                <p class="na-card-author">Published by J.K. Rowling (2003)</p>
+                <p class="na-card-title">Order of Phoenix</p>
+                <p class="na-card-description">
+                    Harry Potter and Dumbledore's warning about the return of Lord Voldemort is not heeded by the wizard authorities who, in turn, look to undermine Dumbledore's authority at Hogwarts and discredit Harry.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <!-- This section is for the Latest News. -->
+    <section class="news custom-background-color">
+        <h2 class="n-title">Latest News</h2>
+        <section class="n-right">
+            <article class="n-news-entry">
+                <a href="#" class="clickable n-news-title">Popular Science Recommendations</a>
+                <p class="n-news-description">This genre of books takes science, and makes it fun and engaging for non-scientists to learn about new concepts. Find out more about stars in our galaxy or other natural phenomenas, through these popular science titles.</p>
+            </article>
+
+            <article class="n-news-entry">
+                <a href="#" class="clickable n-news-title">Still seeking for a book group?</a>
+                <p class="n-news-description">We are hosting many online and in-person events during the month of June, specifically designed to bring people that are interesting in joining a book group. If that sounds like you, come along because we can't wait to connect more people.</p>
+            </article>
+
+            <article class="n-news-entry">
+                <a href="#" class="clickable n-news-title">Feedback Review</a>
+                <p class="n-news-description">At the end of last year, we asked our members what book clubs meant to them and whether they have any suggestions. There were many fantastic reviews, but one of the most requested features was for us to provide e-book copies of the books in our current catalogue.</p>
+            </article>
+        </section>
+    </section>
+
+    <!-- This is the container for the footer. -->
+    <footer class="custom-background-color">
+        <svg aria-label="Book Program Discussion Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.05 21.34">
+            <title>Book Program Discussion</title>
+            <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#5b3a2a;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M.81,3.25C3.65,2.42,5.74,1.94,7,1.64,8.43,1.3,10.52.77,13.15,0a1,1,0,0,1,1.28,1v.85a.73.73,0,0,0,.92.71h0a1.61,1.61,0,0,1,2,1.57V16.42A1.62,1.62,0,0,1,16.15,18L4,21.28a1.52,1.52,0,0,1-.42.06H3a2.65,2.65,0,0,1-1.58-.52l-.35-.25A2.65,2.65,0,0,1,0,18.42C0,14.13.27,11.34,0,4.3c0-.17,0-.36,0-.49a.51.51,0,0,1,.37-.43Z"/><polygon class="cls-2" points="3.78 7.15 15.66 4.14 15.66 16.53 3.78 19.49 3.78 7.15"/><path class="cls-2" d="M1.9,4.72,11,2.17a.45.45,0,0,1,.42.1l.92.83a.21.21,0,0,1-.08.35l-9,2.39a.67.67,0,0,1-.58-.11l-.84-.65A.21.21,0,0,1,1.9,4.72Z"/><path class="cls-1" d="M21.3,8.11a16.46,16.46,0,0,1,2.36-.17,4.51,4.51,0,0,1,2.4.46A1.74,1.74,0,0,1,27,10a1.84,1.84,0,0,1-1.33,1.72v0a2,2,0,0,1,1.61,2,2.17,2.17,0,0,1-.84,1.73,5.09,5.09,0,0,1-3.18.73,14.17,14.17,0,0,1-2-.12Zm1.81,3.1h.6c1,0,1.48-.4,1.48-1s-.47-.93-1.3-.93a5.74,5.74,0,0,0-.78,0Zm0,3.58a4.67,4.67,0,0,0,.71,0c.83,0,1.56-.33,1.56-1.18s-.73-1.13-1.64-1.13h-.63Z"/><path class="cls-1" d="M34.91,8.12a17.08,17.08,0,0,1,2.45-.18,5.26,5.26,0,0,1,3.33.87,3.56,3.56,0,0,1,1.36,3,4.13,4.13,0,0,1-1.33,3.28,5.82,5.82,0,0,1-3.74,1,15.51,15.51,0,0,1-2.07-.12Zm1.82,6.59a4,4,0,0,0,.63,0,2.51,2.51,0,0,0,2.76-2.83,2.33,2.33,0,0,0-2.56-2.56,3.63,3.63,0,0,0-.83.07Z"/><path class="cls-1" d="M28.29,8.14A15.51,15.51,0,0,1,30.76,8a3.9,3.9,0,0,1,2.47.65,2.32,2.32,0,0,1,.86,1.87,2.52,2.52,0,0,1-.74,1.92,3.8,3.8,0,0,1-2.63.85,3.72,3.72,0,0,1-.62,0v2.9H28.29Zm1.81,3.67a2.42,2.42,0,0,0,.61,0c1,0,1.57-.49,1.57-1.31s-.52-1.18-1.44-1.18a3,3,0,0,0-.74.06Z"/></g></g>
+        </svg>
+        <p> 4 Privet Drive, New Zealand</p>
+    </footer>
+
+    <!-- This is the container for the registration modal. -->
+    <section class="modal" id="myModal">
+
+        <!-- This encloses everything inside the white section. -->
+        <section class="m-contents">
+
+            <!-- This div holds the metadata information such as the title of the form etc. -->
+            <div class="bcr-metadata custom-background-color">
+                <div class="bcrm-left">
+                    <h2 class="bcr-title">Club Member Registration</h2>
+                    <p class="bcr-description">Complete the registration for becoming a new book club member.</p>
+                </div>
+                <div class="bcrm-right">     
+                    <button id="close-modal" aria-level="Close Registration Form">
+                        <svg aria-label="Close Registration Form" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <title>Close Registration Form</title>
+                            <desc>The registration form is currently open, click to close this.</desc>
+                            <path d="M2 2L22 22M2 22L22 2L2 22Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- This is the beginning of the form. -->
+            <div id=”bookclubrego”>
+                <form class="form">
+                    <div id="userDetails" class="f-section">
+                        <h3 class="fs-title">User Details</h3>
+                        <div class="fs-element">
+                            <label for="given-name">Given Name</label><br>
+                            <input type="text" aria-label="Given Name" id="given-name" name="given-name"><br>
+                        </div>
+                        <div class="fs-element">
+                            <label for="surname">Surname</label><br>
+                            <input type="text" aria-label="Surname" id="surname" name="surname"><br>
+                        </div>
+                        <div class="fs-element">
+                            <label for="username">Username</label><br>
+                            <input type="text" aria-label="Username" id="username" name="username"><br>
+                        </div>
+                        <div class="fs-element">
+                            <label for="password">Password</label><br>
+                            <input type="password" aria-label="Password" id="password" name="password"><br>
+                        </div>
+                    </div>
+                    <div id="addresses" class="f-section">
+                        <h3 class="fs-title">Addresses</h3>
+                        <div class="fs-element">
+                            <label for="home-address">Home Address</label><br>
+                            <input type="text" aria-label="Home Address" id="home-address" name="home-address"><br>
+                        </div>
+                        <div class="fs-element">
+                            <label for="work-address">Work Address</label><br>
+                            <input type="text" aria-label="Work Address" id="work-address" name="work-address"><br>
+                        </div>
+                    </div>
+                    <div id="contacts" class="f-section">
+                        <h3 class="fs-title">Contacts</h3>
+                        <div class="fs-flex">
+                            <div class="fs-element fs-padding">
+                                <label for="mobile-number">Mobile Number</label><br>
+                                <input type="text" aria-label="Mobile Number" id="mobile-number" name="mobile-number"><br>
+                            </div>
+                            <div class="fs-element fs-padding">
+                                <label for="email-address">Email Address</label><br>
+                                <input type="email" aria-label="Email Address" id="email-address" name="email-address"><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="f-section">
+                        <button type="submit" aria-label="Submit Form" class="custom-background-color fs-element btn-submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </section>
+
+    <!-- Importing the JavaScript functions from the file. -->
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,405 @@
+/*
+    Book Program Discussion.
+    Developed by Shrey Tailor.
+*/
+
+/* Importing all the required fonts. */
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url("./fonts/SourceSansPro-Black.ttf");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url("./fonts/SourceSansPro-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url("./fonts/SourceSansPro-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url("./fonts/SourceSansPro-SemiBold.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Color class which is required for the assignment. */
+.custom-background-color {
+    background-color: #5B3A29;
+}
+
+.custom-color {
+    color: #5B3A29;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+/* Removing any margin and/or padding from all screen components. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Normalizing the font family, weight, and size across the website. */
+html {
+    font-size: 18px;
+    font-weight: 400;
+    overflow-x: hidden;
+    font-family: "Source Sans Pro";
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+button:focus-visible {
+    background-color: #3db5eb;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
+    justify-content: space-between;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
+}
+
+.logo {
+    width: 85px;
+}
+
+.h-menu-item, nav a {
+    cursor: pointer;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.h-selected-item-rectangle {
+    width: 80px;
+    height: 5px;
+    background-color: #CAE447;
+    transform: translateY(15px);
+}
+
+.h-social-icon {
+    cursor: pointer;
+    display: inline;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    padding-top: 80px;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 80px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    background-image: url("./images/hero-background.png");
+    box-shadow: inset 0px -4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.left-arrow, .right-arrow {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.primary-content {
+    color: white;
+    max-width: 825px;
+    text-align: center;
+}
+
+.title {
+    font-size: 55px;
+    font-weight: 900;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.register-now {
+    height: 50px;
+    width: 300px;
+    color: #4D5912;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #CAE447;
+    box-shadow: 0px 4px 5px 3px rgba(0, 0, 0, 0.22);
+}
+
+.newest-arrivals {
+    margin-top: 130px;
+    padding-left: 100px;
+    margin-bottom: 130px;
+}
+
+.na-top {
+    display: flex;
+    padding-right: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.na-title {
+    font-size: 38px;
+}
+
+.na-arrow {
+    display: inline;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.na-bottom {
+    margin-top: 30px;
+}
+
+.na-cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.na-card {
+    min-width: 300px;
+    min-height: 415px;
+    margin-right: 60px;
+}
+
+.na-card-image {
+    width: 100%;
+    height: 200px;
+}
+
+.na-card-author {
+    font-size: 15px;
+    font-weight: 600;
+    color: #545454;
+    margin-top: 15px;
+}
+
+.na-card-title {
+    font-size: 26px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.na-card-description {
+    font-size: 18px;
+    margin-top: 5px;
+    line-height: 140%;
+    min-height: 130px;
+    margin-bottom: 10px;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
+
+.n-right {
+    margin-top: 30px;
+}
+
+.n-news-entry:not(:first-child) {
+    padding-top: 30px;
+}
+
+.n-title {
+    color: white;
+    font-size: 38px;
+}
+
+.n-news-title {
+    color: #CAE447;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.n-news-description {
+    color: white;
+    margin-top: 5px;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.modal {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: auto;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background-color: #181818ef;
+}
+
+.m-contents {
+    width: 80%;
+    height: 90%;
+    max-width: 750px;
+    overflow-y: scroll;
+    padding-bottom: 50px;
+    scroll-behavior: smooth;
+    background-color: white;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.bcr-metadata {
+    display: flex;
+    padding-top: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
+    flex-direction: row;
+    padding-bottom: 40px;
+    justify-content: space-between;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    padding-bottom: 80px;
+    justify-content: center;
+}
+
+footer svg {
+    width: 100px;
+    margin-right: 50px;
+}
+
+footer p {
+    color: white;
+    font-weight: 600;
+}
+
+.form {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.bcrm-left {
+    margin-right: 50px;
+}
+
+.bcr-title {
+    font-size: 30px;
+    color: #CAE447;
+}
+
+.bcr-description {
+    color: white;
+    margin-top: 5px;
+    font-size: 16.5px;
+}
+
+.f-section {
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+.fs-title {
+    font-size: 22px;
+}
+
+.fs-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fs-element {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.fs-padding:not(:first-child) {
+    padding-left: 15px;
+}
+
+.fs-element label {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: rgb(75, 75, 75);
+}
+
+.fs-element input {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #7D7D7D;
+}
+
+.btn-submit, .btn-clear {
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn-submit {
+    color: white;
+}
+
+@media screen and (min-width: 1000px) {
+    .header {
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+
+    .newest-arrivals {
+        padding-left: 140px;
+    }
+
+    .na-top {
+        padding-right: 140px;
+    }
+
+    .news {
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+}
