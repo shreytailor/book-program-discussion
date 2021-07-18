@@ -6,6 +6,12 @@ The assignment was to create a homepage for the Book Program Discussion club, us
 
 ## Screenshots
 
+<img width="700px" src="./screenshots/homepage-top.png">
+
+<img width="700px" src="./screenshots/homepage-bottom.png">
+
+<img width="700px" src="./screenshots/form.png">
+
 ## Set Up
 
 There is no setup required for this project. Simply launch the website by opening ```index.html``` in your browser.
